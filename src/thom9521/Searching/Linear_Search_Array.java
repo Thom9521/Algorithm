@@ -1,8 +1,8 @@
-package thom9521;
+package thom9521.Searching;
 
 import java.util.Scanner;
 
-public class Linear_Search {
+public class Linear_Search_Array {
 
     public static void main(String[] args) {
 
@@ -14,19 +14,20 @@ public class Linear_Search {
         for (int i = 0; i < array.length; i++)
             array[i] = i;
 
-        //System.out.println("Hvem vil du finde?");
-        //String find = input.nextLine();
+        System.out.println("Hvem vil du finde?");
+        String find = input.nextLine();
 
-        for (int i = 0; i <10 ; i++) {
+        for (int i = 0; i < 10; i++) {
             String navn = navne[array[i]];
 
-            if(navn == "Bertram") {
+            if (find.equals(navne[array[i]])) {
                 System.out.println(navn + " er fundet på plads " + array[i]);
                 System.exit(0);
 
-            }
-            else {
+            } else {
                 System.out.println("Prøv igen");
-        }
+            }
 
-    }}}
+        }
+    }
+}
